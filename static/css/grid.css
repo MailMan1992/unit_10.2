@@ -1,0 +1,107 @@
+.grid-container {
+    display: grid;
+    padding-top: 2em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "i" "d";
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-picture {
+    grid-area: i;
+    min-width: 0;
+    padding: 5em;
+    align-self: center;
+    justify-self: center;
+}
+
+.home-d {
+    grid-area: d;
+    min-width: 0;
+    align-self: center;
+    white-space: initial;
+    justify-self: center;
+
+}
+
+.grid-container-review {
+    display: grid;
+    padding-top: 5em;
+    row-gap: 3em;
+    column-gap: 10px;
+    align-content: stretch;
+    grid-template-areas: "a b" "c d" "e f";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+}
+
+.item-a {
+    grid-area: a;
+    border-style: groove;
+    align-self: center;
+    justify-self: center;
+}
+
+.item-b {
+    grid-area: b;
+    border-style: groove;
+    align-self: center;
+    justify-self: center;
+}
+
+.item-c {
+    grid-area: c;
+    border-style: groove;
+    align-self: center;
+    justify-self: center;
+}
+
+.item-d {
+    grid-area: d;
+    border-style: groove;
+    align-self: center;
+    justify-self: center;
+}
+
+.item-e {
+    grid-area: e;
+    border-style: groove;
+    align-self: center;
+    justify-self: center;
+}
+
+.item-f {
+    grid-area: f;
+    border-style: groove;
+    align-self: center;
+    justify-self: center;
+}
+
+/* @media screen and (max-width: 650px) {
+    .grid-container {
+        display: grid;
+        padding-top: 2em;
+        align-content: stretch;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "f" "i" "d";
+        justify-content: center;
+    }
+
+    .grid-stock-picture {
+        grid-area: i;
+        padding: 5em;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .grid-description {
+        grid-area: d;
+        align-content: stretch;
+        align-self: center;
+        justify-self: center;
+
+    }
+} */

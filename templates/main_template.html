@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} {% endblock title %} </title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/grid.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/nav.css')}}">
+    {% block head %}
+    {% endblock head %}
+
+</head>
+
+<body>
+<section>
+    <header>
+
+    </header>
+    <nav>
+        <div class='logo'>
+            <h1>
+                N-R Silversmith
+            </h1>
+        </div>
+        <ul class='nav-links'>
+            <li><a href="/homepage">Home</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/reviews">Reviews</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+</section>
+<script type="text/javascript" src="{{url_for('static', filename='js/nav.js')}}"></script>
+
+
+{% block body %}
+{% endblock body %}
+
+</body>
+</html>
