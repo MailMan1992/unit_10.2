@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pytest = "*"
+
+[packages]
+flask = "==1.1.2"
+jinja2 = "==2.11.2"
+Werkzeug = "==1.0.1"
+
+
+[requires]
+python_version = "3.7"

@@ -17,10 +17,9 @@ def home_page():
 # def gallery():
 #     images = os.listdir(os.path.join(app.static_folder, 'gallery_images'))
 #     return render_template("gallery.html", images=images)
-def portfolio():
+def gallery():
     images = os.listdir(os.path.join(app.static_folder, "gallery_images"))
     return render_template('gallery.html', images=images)
-
 
 
 @app.route('/reviews')
